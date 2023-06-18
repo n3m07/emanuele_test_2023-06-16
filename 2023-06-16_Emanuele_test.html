@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .newDivClass {
+            /* background-color: white; */
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-color: black;
+            border-style: solid;
+            border-width: 2px;
+        }
+    </style>
+</head>
+<body class="flex flex-col w-screen h-screen bg-pink-300">
+
+    <div class="flex flex-col justify-center items-center w-[100%] h-[100vh] p-[1rem]">
+        <div class="flex flex-col justify-start items-center w-[60%] h-[45vh] overflow-y-auto gap-[0.3rem]">
+            <div class="flex justify-center items-center w-[100%]">
+                <input type="text" class="border border-black rounded-md w-[20%] h-[10vh] p-[0.5rem]" placeholder="bg-color" id="bgCol">
+            </div>
+            <div class="flex justify-center items-center w-[100%]">
+                <input type="text" class="border border-black rounded-md w-[20%] h-[10vh] p-[0.5rem]" placeholder="text-color" id="txtCol">
+            </div>
+            <div class="flex justify-center items-center w-[100%]">
+                <input type="text" class="border border-black rounded-md w-[20%] h-[10vh] p-[0.5rem]" placeholder="text content" id="txt">
+            </div>
+            <div class="flex justify-center items-center w-[100%] mt-[0.2rem]">
+                <button class="bg-white w-[10%] h-[10vh] rounded-md border border-black p-[0.5rem]" id="btn">
+                   crea 
+                </button>
+            </div>
+        </div>
+        <div id="newDiv" class="flex flex-wrap justify-center items-start w-[100%] h-[55vh] overflow-y-auto">
+
+        </div>
+    
+    </div>
+
+
+    <script src="2023-06-16_Emanuele_test.js"></script>
+</body>
+</html>
