@@ -567,27 +567,27 @@
     Al click sul pulsante, viene creato un div 200px x 200px che avrà sfondo, colore del testo e
     contenuto dettati dagli input digitati, come sopra descritto.
     Ogni volta che viene premuto il pulsante "crea" l'elemento creato viene aggiunto al precedente.*/
-    
-    function gett(id){
-       return document.getElementById(id)
+
+    function gett(id) {
+        return document.getElementById(id)
     }
 
-    let btn= gett('btn')
-    let bgCol= gett('bgCol').value
-    let txtCol= gett('txtCol').value
-    let txt= gett('txt').value
-    let newDiv= gett('newDiv')
+    let btn = gett('btn')
+    let bgCol = gett('bgCol').value
+    let txtCol = gett('txtCol').value
+    let txt = gett('txt').value
+    let newDiv = gett('newDiv')
     //console.log(bgCol) test
     //console.log(typeof(bgCol.value)) test
-    
+
 
     btn.addEventListener('click', () => {
         //console.log('castori') test
-        let el= document.createElement('div')
+        let el = document.createElement('div')
         el.innerText = txt
         el.classList.add('newDivClass')
-        el.style.backgroundColor= bgCol
-        el.style.color= txtCol
+        el.style.backgroundColor = bgCol
+        el.style.color = txtCol
         newDiv.appendChild(el)
 
     })
