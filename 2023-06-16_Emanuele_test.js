@@ -573,9 +573,9 @@
     }
 
     let btn = gett('btn')
-    let bgCol = gett('bgCol').value
-    let txtCol = gett('txtCol').value
-    let txt = gett('txt').value
+    let bgCol = gett('bgCol')
+    let txtCol = gett('txtCol')
+    let txt = gett('txt')
     let newDiv = gett('newDiv')
     //console.log(bgCol) test
     //console.log(typeof(bgCol.value)) test
@@ -584,10 +584,10 @@
     btn.addEventListener('click', () => {
         //console.log('castori') test
         let el = document.createElement('div')
-        el.innerText = txt
+        el.innerText = txt.value
         el.classList.add('newDivClass')
-        el.style.backgroundColor = bgCol
-        el.style.color = txtCol
+        el.style.backgroundColor = bgCol.value
+        el.style.color = txtCol.value
         newDiv.appendChild(el)
 
     })
